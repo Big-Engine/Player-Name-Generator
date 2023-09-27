@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player Name Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>Player 1: Benjamin</p>
+
+    <script type="text/javascript">
+      const para = document.querySelector('p')
+
+      para.addEventListener('click', updateName)
+
+      function updateName(){
+        const name = prompt('Enter a new name')
+        para.textContent = `Player 1: ${name}`
+      }
+    </script>
+  </body>
+</html>
